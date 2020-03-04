@@ -70,9 +70,120 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-factory" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/04/01/hello-world/" class="article-date">
+    <a href="/2019/04/17/factory/" class="article-date">
+  <time datetime="2019-04-17T07:31:10.000Z" itemprop="datePublished">2019-04-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/17/factory/">Desgin patterns - creational design patterns</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>In this blog, we are going to talk about creational design patterns, such as Abstract Fatory, Builder. With this blog, you would be able to answer questions such as</p>
+<ul>
+<li>What is the difference between Builder, Abstract Factory, Factory?</li>
+</ul>
+<h1 id="Creational-design-patterns"><a href="#Creational-design-patterns" class="headerlink" title="Creational design patterns"></a>Creational design patterns</h1><h2 id="Abstract-factory"><a href="#Abstract-factory" class="headerlink" title="Abstract factory"></a>Abstract factory</h2><h2 id="Factory-method"><a href="#Factory-method" class="headerlink" title="Factory method"></a>Factory method</h2><h2 id="Builder"><a href="#Builder" class="headerlink" title="Builder"></a>Builder</h2><p>The Builder design pattern describes how to solve such problems:</p>
+<ul>
+<li>Encapsulate creating and assembling the parts of a complex object in a separate Builder object.<br>A class delegates object creation to a Builder object instead of creating the objects directly.<br>A class (the same construction process) can delegate to different Builder objects to create different representations of a complex object.</li>
+</ul>
+<h2 id="Prototype"><a href="#Prototype" class="headerlink" title="Prototype"></a>Prototype</h2><h2 id="Singleton"><a href="#Singleton" class="headerlink" title="Singleton"></a>Singleton</h2><h1 id="Descrption-of-Factory-and-Builder"><a href="#Descrption-of-Factory-and-Builder" class="headerlink" title="Descrption of Factory and Builder"></a>Descrption of Factory and Builder</h1><p>They are both design patterns</p>
+<p><a href="https://stackoverflow.com/questions/757743/" target="_blank" rel="noopener">https://stackoverflow.com/questions/757743/</a></p>
+<h1 id="Differences"><a href="#Differences" class="headerlink" title="Differences"></a>Differences</h1><p>what-is-the-difference-between-builder-design-pattern-and-factory-design-pattern</p>
+<p>Gamma design patterns 1995.</p>
+<p>From Wikipedia:</p>
+<p>Builder focuses on constructing a complex object step by step. Abstract Factory emphasizes a family of product objects (either simple or complex). Builder returns the product as a final step, but as far as the Abstract Factory is concerned, the product gets returned immediately.</p>
+<p>Builder often builds a Composite.</p>
+<p>Often, designs start out using Factory Method (less complicated, more customizable, subclasses proliferate) and evolve toward Abstract Factory, Prototype, or Builder (more flexible, more complex) as the designer discovers where more flexibility is needed.</p>
+<p>Sometimes creational patterns are complementary: Builder can use one of the other patterns to implement which components get built. Abstract Factory, Builder, and Prototype can use Singleton in their implementations.</p>
+<p>Wikipedia entry for factory design pattern: <a href="http://en.wikipedia.org/wiki/Factory_method_pattern" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Factory_method_pattern</a></p>
+<p>Wikipedia entry for builder design pattern: <a href="http://en.wikipedia.org/wiki/Builder_pattern" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Builder_pattern</a></p>
+<h1 id="DDD"><a href="#DDD" class="headerlink" title="DDD ?"></a>DDD ?</h1><h1 id="When-to-use-constructor-factory-builder"><a href="#When-to-use-constructor-factory-builder" class="headerlink" title="When to use constructor, factory, builder?"></a>When to use constructor, factory, builder?</h1><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li>Gamma, design patterns, 1995</li>
+<li><a href="https://en.wikipedia.org/wiki/Builder_pattern" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Builder_pattern</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/17/factory/" data-id="ck7djn2g800008asdwd0eyymz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-osgi" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/01/osgi/" class="article-date">
+  <time datetime="2019-04-01T18:15:15.000Z" itemprop="datePublished">2019-04-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/01/osgi/">osgi</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This blog is going to talk about OSGi. Target of this blog aims to help people</p>
+<ul>
+<li>Get an overall understanding of OSGi.</li>
+<li>Evaluate whether OSGI is a good alternative to solve their problems.</li>
+</ul>
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><h2 id="What-is-OSGI"><a href="#What-is-OSGI" class="headerlink" title="What is OSGI?"></a>What is OSGI?</h2><p>OSGi (Open Service Gateway Initiative) is a Java framework for developing and deploying modular software programs and libraries.</p>
+<p>OSGi has two parts. The first part is a specification for modular components called bundles, which are commonly referred to as plug-ins. The specification defines an infrastructure for a bundle’s life cycle and determines how bundles will interact.  The second part of OSGi is a Java Virtual Machine (JVM)-level service registry that bundles can use to publish, discover and bind to services in a service-oriented architecture (SOA).</p>
+<p>The work behind OSGi began in 1999 when embedded systems vendors and networking providers came together to create a set of standards for a Java-based service framework that could be managed remotely. OSGi was originally conceived to be a gateway for managing smart appliances and other Internet-enabled devices in the home. The gateway consisted of a Java software framework embedded in a hardware platform such as a cable modem or set-top box. The framework acted as the central message broker for the device on the home’s local area network (LAN). The goal, in essence, was to create a standardized middleware for smart devices and make managing cross-dependencies easier for software developers.</p>
+<h2 id="How-micro-service-is-supported"><a href="#How-micro-service-is-supported" class="headerlink" title="How micro-service is supported?"></a>How micro-service is supported?</h2><p>Code deployment?<br>In the same process?</p>
+<p>Package conflicts? Dependencies?<br><a href="https://enroute.osgi.org/FAQ/200-resolving.html" target="_blank" rel="noopener">https://enroute.osgi.org/FAQ/200-resolving.html</a></p>
+<p>classloader</p>
+<p><a href="https://dzone.com/articles/osgi-bundle-communication" target="_blank" rel="noopener">https://dzone.com/articles/osgi-bundle-communication</a></p>
+<h2 id="What-features-does-OSGI-provide"><a href="#What-features-does-OSGI-provide" class="headerlink" title="What features does OSGI provide?"></a>What features does OSGI provide?</h2><h2 id="What-limitations-does-OSGI-have"><a href="#What-limitations-does-OSGI-have" class="headerlink" title="What limitations does OSGI have?"></a>What limitations does OSGI have?</h2><h2 id="What-the-pros-and-cons-of-OSGI-comparing-to-docker-Amazon-ECS"><a href="#What-the-pros-and-cons-of-OSGI-comparing-to-docker-Amazon-ECS" class="headerlink" title="What the pros and cons of OSGI, comparing to docker, Amazon ECS?"></a>What the pros and cons of OSGI, comparing to docker, Amazon ECS?</h2><h2 id="Any-good-examples"><a href="#Any-good-examples" class="headerlink" title="Any good examples?"></a>Any good examples?</h2><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><a href="https://www.osgi.org/" target="_blank" rel="noopener">https://www.osgi.org/</a></li>
+<li><a href="https://www.osgi.org/developer/where-to-start/" target="_blank" rel="noopener">https://www.osgi.org/developer/where-to-start/</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/01/osgi/" data-id="ck7djn2gc00018asd08701xnx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hexo_usages" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/01/hexo_usages/" class="article-date">
   <time datetime="2019-04-01T18:11:06.000Z" itemprop="datePublished">2019-04-01</time>
 </a>
     
@@ -84,7 +195,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/01/hello-world/">Hexo usages</a>
+      <a class="article-title" href="/2019/04/01/hexo_usages/">Hexo usages</a>
     </h1>
   
 
@@ -105,7 +216,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/01/hello-world/" data-id="cjtyon3je000060qlolw740tf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/04/01/hexo_usages/" data-id="ck7djn2gd00028asdrin13ld3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -146,7 +257,15 @@
       <ul>
         
           <li>
-            <a href="/2019/04/01/hello-world/">Hexo usages</a>
+            <a href="/2019/04/17/factory/">Desgin patterns - creational design patterns</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/01/osgi/">osgi</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/01/hexo_usages/">Hexo usages</a>
           </li>
         
       </ul>
@@ -161,7 +280,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 Pengxiang Hu<br>
+      &copy; 2020 Pengxiang Hu<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
