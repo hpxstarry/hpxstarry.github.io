@@ -15,11 +15,11 @@ categories: bigdata
 
 
 
-# Data format categories
+# 概览 data formats
 
 Data fomrats 主要可以分为如下三种类型
 * Unstructured， 没有schema，例如纯文本text, TSV, CSV等数据类型。
-* Semi-structured， 半结构，知道一定的schema信息，例如JSON, YAML, XML。 
+* Semi-structured， 半结构化，知道一定的schema信息，例如JSON, YAML, XML。 
 * Structured，结构化，知道完整的schema，例如Avro, Parquet等。
 
 ![image](/assets/images/data_format_overview.png)
@@ -43,9 +43,13 @@ CSV/TSV 简单实用，基本上是所有的数据处理engine的默认格式。
 
 
 ## Semi-structured
+JSON - 
+
 * JSON, ION, YAML
 
-* JSON 的变种 - SMILE
+Ion is 20% better than JSON. 
+
+* JSON 的变种 - BSON, SMILE。
 
 
 ## Structured 
@@ -93,6 +97,7 @@ Features
 
 
 **ORC** 
+**Thrift**
 
 
 
@@ -111,4 +116,4 @@ Features
 | ORC         |                         |                                                                        | 5                        | Y                                           |              |
 
 
-Ion is 20% better than JSON?
+More https://en.wikipedia.org/wiki/Comparison_of_data-serialization_formats
