@@ -11,5 +11,8 @@ This package contains
 * Git hub repostiory - https://github.com/hpxstarry/hpxstarry.github.io
 * Personal blog website - https://hpxstarry.github.io/
 
+# How to test
+* jekyll build && jekyll serve --watch
+
 # How to deploy
 * jekyllrb build && git push
