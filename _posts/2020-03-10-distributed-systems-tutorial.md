@@ -5,13 +5,22 @@ date:   2020-03-10 00:31:10 -0800
 categories: bigdata
 ---
 
+<<<<<<< HEAD
+=======
+For almost 3 years, I have been using different kinds of distributed systems to solve production problems within my work. I investigated paper, books; researched the documents of distirbuted products, such as Hadoop, Spark, HBase. This gets me to think about one question, can we have a tutorial to distributed systems, introducing the common challenges, the frequently used trade-offs, different products and their relationships. So I wrote this blog. 
+
+>>>>>>> Update
 # Introduction
 ## What is distributed systems?
 A distributed system in its most simplest definition is a group of computers working together as to appear as a single computer to the end-user.
 
 These machines have a shared state, operate concurrently and can fail independently without affecting the whole system’s uptime.
 
+<<<<<<< HEAD
 ## Why Distributed systems?
+=======
+## Why distributed systems?
+>>>>>>> Update
 Systems are always distributed by necessity. The truth of the matter is — managing distributed systems is a complex topic chock-full of pitfalls and landmines. It is a headache to deploy, maintain and debug distributed systems, so why go there at all?
 
 ``In a nutshell, scale``.  Scalability is the ability of a system, network, or process, to handle a growing amount of work in a capable manner or its ability to be enlarged to accommodate that growth.
@@ -214,8 +223,8 @@ Distributed Data Stores are most widely used and recognized as Distributed Datab
 1. https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html
 2. Designing data-intensive applications. 
 3. https://blog.yugabyte.com/how-does-consensus-based-replication-work-in-distributed-databases/
-4. RAFT - https://raft.github.io/
-5. Consitency slide - http://www.cs.cmu.edu/~srini/15-446/S09/lectures/10-consistency.pdf
+4. RAFT - [https://raft.github.io/](https://raft.github.io/)
+5. Consitency slide - [http://www.cs.cmu.edu/~srini/15-446/S09/lectures/10-consistency.pdf](http://www.cs.cmu.edu/~srini/15-446/S09/lectures/10-consistency.pdf)
 6. Lamport papers - http://lamport.azurewebsites.net/pubs/pubs.html
 7. Distributed systems for fun - http://book.mixu.net/distsys/single-page.html
 8. Time and order - https://www.microsoft.com/en-us/research/uploads/prod/2016/12/Time-Clocks-and-the-Ordering-of-Events-in-a-Distributed-System.pdf
