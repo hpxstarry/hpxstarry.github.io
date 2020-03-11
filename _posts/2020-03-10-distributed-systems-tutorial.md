@@ -5,45 +5,18 @@ date:   2020-03-10 00:31:10 -0800
 categories: bigdata
 ---
 
-
-# Turtorials 
-
-* Distributed systems Cheat sheet
-
-http://dimafeng.com/2016/12/04/distributed-systems/
-
-* A Thorough Introduction to Distributed Systems
-
-https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/
-
-* Distributed systems theory for the distributed systems engineer
-
- https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/
-
-
-
-
-
 # Introduction
 ## What is distributed systems?
 A distributed system in its most simplest definition is a group of computers working together as to appear as a single computer to the end-user.
 
-
-
 These machines have a shared state, operate concurrently and can fail independently without affecting the whole system’s uptime.
-
 
 ## Why Distributed systems?
 Systems are always distributed by necessity. The truth of the matter is — managing distributed systems is a complex topic chock-full of pitfalls and landmines. It is a headache to deploy, maintain and debug distributed systems, so why go there at all?
 
-
-
-
 ``In a nutshell, scale``.  Scalability is the ability of a system, network, or process, to handle a growing amount of work in a capable manner or its ability to be enlarged to accommodate that growth.
 
 What a distributed system enables you to do is **scale horizontally**.  Going back to our previous example of the single database server, the only way to handle more traffic would be to upgrade the hardware the database is running on. This is called **scaling vertically**. Scaling vertically is all well and good while you can, but after a certain point you will see that even the best hardware is not sufficient for enough traffic, not to mention impractical to host. Scaling horizontally simply means adding more computers rather than upgrading the hardware of a single one.
-
-
 
 
 It is significantly cheaper than vertical scaling after a certain threshold but that is not its main case for preference.
@@ -54,17 +27,11 @@ The best thing about horizontal scaling is that you have no cap on how much you 
 
 Easy scaling is not the only benefit you get from distributed systems. Fault tolerance and low latency are also equally as important.
 
-
-
 **Fault Tolerance** — a cluster of ten machines across two data centers is inherently more fault-tolerant than a single machine. Even if one data center catches on fire, your application would still work.
-
-
 
 **Low Latency** — The time for a network packet to travel the world is physically bounded by the speed of light. For example, the shortest possible time for a request‘s round-trip time (that is, go back and forth) in a fiber-optic cable between New York to Sydney is 160ms. Distributed systems allow you to have a node in both cities, allowing traffic to hit the node that is closest to it.
 
 For a distributed system to work, though, you need the software running on those machines to be specifically designed for running on multiple computers at the same time and handling the problems that come along with it. This turns out to be no easy feat.
-
-
 
 
 # CAP 
@@ -82,8 +49,6 @@ CAP means ``you could only choose 2 of these 3``. Since network partition always
 ## Why CAP
 
 Let’s say you have replicas of your database in two different datacenters. The exact method of replication doesn’t matter for now – it may be ``single-leader (master/slave), multi-leader (master/master) or quorum-based replication (Dynamo-style)``. The requirement of replication is that whenever data is written in one datacenter, it also has to be written to the replica in the other datacenter. Assuming that clients only connect to one datacenter, there must be a network link between the two datacenters over which the replication happens.
-
-
 
 Now assume that network link is interrupted – that’s what we mean with a network partition. What happens?
 
@@ -107,7 +72,6 @@ Uses ``narrow definitions``
 * ``Partition Tolerance``. (terribly mis-named) basically means that you’re communicating over an asynchronous network that may delay or drop messages. The internet and all our datacenters have this property, so you don’t really have any choice in this matter.
 
 
-
 Describes a very specific model
 
 * Single read-write register. ``No transactions``. 
@@ -115,8 +79,6 @@ Describes a very specific model
 * ``Only fault`` considered is network partition.    
 
 * Says nothing about ``latency``. 
-
-
 
 Examples
 
@@ -258,3 +220,8 @@ Distributed Data Stores are most widely used and recognized as Distributed Datab
 7. Distributed systems for fun - http://book.mixu.net/distsys/single-page.html
 8. Time and order - https://www.microsoft.com/en-us/research/uploads/prod/2016/12/Time-Clocks-and-the-Ordering-of-Events-in-a-Distributed-System.pdf
 9. https://en.wikipedia.org/wiki/Byzantine_fault
+10. Distributed systems Cheat sheet
+http://dimafeng.com/2016/12/04/distributed-systems/
+11. A Thorough Introduction to Distributed Systems - https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/
+12. Distributed systems theory for the distributed systems engineer - https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/
+
