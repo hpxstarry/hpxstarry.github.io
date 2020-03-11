@@ -4,7 +4,6 @@ title:  Data formats walk through
 date:   2020-03-04 00:31:10 -0800
 categories: bigdata
 ---
-
 ```
 前方高能，作者为表达方便，非常任性，想用中文就用中文，想用英文就用英文， 不喜误入。
 ```
@@ -12,7 +11,6 @@ categories: bigdata
 在大数据处理中，我们经常接触到各种各样的数据类型，例如CSV, JSON, Avro等。这篇博客将
 * 讨论这些data formats，及它们的trade-offs;
 * 针对use case, 如何选择data format。 
-
 
 
 # 概览 data formats
@@ -119,7 +117,6 @@ phone numbers:
 相比于JSON, ION具有如下特点
 * 支持更多数据格式，例如timestamp, 二进制数据 （blobs)，符号表达式等；
 * 更简洁，一般来说ION能节省33%的空间；对数组结构，ION能减少到原来的20%左右。
-* 
 
 ## Structured data formats
 
