@@ -5,22 +5,15 @@ date:   2020-03-10 00:31:10 -0800
 categories: bigdata
 ---
 
-<<<<<<< HEAD
-=======
 For almost 3 years, I have been using different kinds of distributed systems to solve production problems within my work. I investigated paper, books; researched the documents of distirbuted products, such as Hadoop, Spark, HBase. This gets me to think about one question, can we have a tutorial to distributed systems, introducing the common challenges, the frequently used trade-offs, different products and their relationships. So I wrote this blog. 
 
->>>>>>> Update
 # Introduction
 ## What is distributed systems?
 A distributed system in its most simplest definition is a group of computers working together as to appear as a single computer to the end-user.
 
 These machines have a shared state, operate concurrently and can fail independently without affecting the whole system’s uptime.
 
-<<<<<<< HEAD
-## Why Distributed systems?
-=======
 ## Why distributed systems?
->>>>>>> Update
 Systems are always distributed by necessity. The truth of the matter is — managing distributed systems is a complex topic chock-full of pitfalls and landmines. It is a headache to deploy, maintain and debug distributed systems, so why go there at all?
 
 ``In a nutshell, scale``.  Scalability is the ability of a system, network, or process, to handle a growing amount of work in a capable manner or its ability to be enlarged to accommodate that growth.
@@ -42,6 +35,18 @@ Easy scaling is not the only benefit you get from distributed systems. Fault tol
 
 For a distributed system to work, though, you need the software running on those machines to be specifically designed for running on multiple computers at the same time and handling the problems that come along with it. This turns out to be no easy feat.
 
+
+# Distributed systems categories
+## Distributed databases
+Distributed Data Stores are most widely used and recognized as Distributed Databases. Most distributed databases are NoSQL non-relational databases, limited to key-value semantics. They provide incredible performance and scalability at the cost of consistency or availability.
+
+* CAP
+
+## Distributed file systems
+## Distributed computing
+## Distributed messaging
+## Distributed ledgers
+## Distributed applications
 
 # CAP 
 
@@ -199,17 +204,6 @@ Difference between atomic broadcast and consensus
 * What is ``Byzantine conditions``?
 https://en.wikipedia.org/wiki/Byzantine_fault
 
-# Distributed systems categories
-## Distributed databases
-Distributed Data Stores are most widely used and recognized as Distributed Databases. Most distributed databases are NoSQL non-relational databases, limited to key-value semantics. They provide incredible performance and scalability at the cost of consistency or availability.
-
-* CAP
-
-## Distributed file systems
-## Distributed computing
-## Distributed messaging
-## Distributed ledgers
-## Distributed applications
 
 # Reading
 ## Books
