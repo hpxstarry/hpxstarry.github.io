@@ -2,9 +2,8 @@
 layout: post
 title:  Desgin patterns - creational design patterns
 date:   2019-04-17 00:31:10 -0800
-categories: jekyll update
+categories: design pattern
 ---
-
 
 
 # Introduction
@@ -53,8 +52,6 @@ Sometimes creational patterns are complementary: Builder can use one of the othe
 Wikipedia entry for factory design pattern: http://en.wikipedia.org/wiki/Factory_method_pattern
 
 Wikipedia entry for builder design pattern: http://en.wikipedia.org/wiki/Builder_pattern
-
-# DDD ?
 
 # When to use constructor, factory, builder?
 

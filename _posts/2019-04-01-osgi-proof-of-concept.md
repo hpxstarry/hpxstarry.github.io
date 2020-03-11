@@ -2,7 +2,7 @@
 layout: post
 title:  OSGi - quick introduction & investigation
 date:   2019-04-01 11:15:15 -0800
-categories: jekyll update
+categories: osgi
 ---
 
 # Introduction
