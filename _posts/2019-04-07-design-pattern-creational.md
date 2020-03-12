@@ -5,7 +5,7 @@ date: 2019-04-17 00:31:10 -0800
 categories: [DesignPattern]
 tags: [design pattern]
 seo:
-  date_modified: 2020-03-12 00:44:34 -0700
+  date_modified: 2020-03-12 01:27:57 -0700
 ---
 
 # Introduction
