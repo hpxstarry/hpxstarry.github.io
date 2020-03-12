@@ -9,7 +9,6 @@ categories: bigdata
 
 ### What is CAP?
 * Consistency - Every read receives the most recent write or an error. To be detailed, it is actually Linearizability.
-
 > If operation B started after operation A successfully completed, then operation B must see the the system in the same state as it was on completion of operation A, or a newer state.
 
 * Availability -  Every request received by ``any`` non-failing node in the system must result in a non-error response. Note that errors are usually by design to achieve consitency. 
@@ -105,6 +104,8 @@ Tradeoff between benefits of replication and work required to keep replicas cons
 * Replica transparency - desirable for different applications
 
 ## Partitioning (sharding)
+
+* Consistent hashing - https://www.toptal.com/big-data/consistent-hashing 
 
 ## Consensus
 

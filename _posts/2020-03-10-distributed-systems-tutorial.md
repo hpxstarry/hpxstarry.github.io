@@ -31,6 +31,9 @@ For a distributed system to work, though, you need the software running on those
 * Cloud Computing Specialization, University of Illinois, Coursera — A long series of courses (6) going over distributed system concepts, applications ?
 * Jepsen — Blog explaining a lot of distributed technologies (ElasticSearch, Redis, MongoDB, etc)
 
+## Papers
+[https://github.com/papers-we-love/papers-we-love/tree/master/distributed_systems](https://github.com/papers-we-love/papers-we-love/tree/master/distributed_systems)
+
 # References
 1. https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html
 2. Designing data-intensive applications. 
