@@ -5,9 +5,6 @@ date:   2020-03-10 00:31:10 -0800
 categories: bigdata
 ---
 
-
-# Distributed database concepts
-
 ## CAP 
 
 ### What is CAP?

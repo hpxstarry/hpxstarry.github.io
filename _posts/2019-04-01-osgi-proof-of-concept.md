@@ -10,7 +10,6 @@ This blog is going to talk about OSGi. Target of this blog aims to help people
 * Get an overall understanding of OSGi.
 * Evaluate whether OSGI is a good alternative to solve their problems.
 
-
 # FAQ
 ## What is OSGI?
 OSGi (Open Service Gateway Initiative) is a Java framework for developing and deploying modular software programs and libraries.
