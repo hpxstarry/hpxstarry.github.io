@@ -24,7 +24,7 @@ author: Vincent Hu                  # change to your full name
 avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
 github:
-  username: hpxiangsky             # change to your github username
+  username: hpxstarry               # change to your github username
 
 twitter:
   username: NightNoStar            # change to your twitter username
@@ -35,7 +35,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/NightNoStar      # change to your twitter homepage
-    - https://github.com/hpxiangsky       # change to your github homepage
+    - https://github.com/hpxstarry       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -48,7 +48,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: America/Los_Angeles
 
 google_analytics:
   # Fill with your Google Analytics ID

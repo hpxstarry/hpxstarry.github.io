@@ -5,6 +5,7 @@ categories: [Blogging, Tutorial]
 tags: [writing]
 ---
 
+
 ## Naming and Path
 
 Create a new file named with the format `YYYY-MM-DD-title.md` then put it into `_post` of the root directory.
