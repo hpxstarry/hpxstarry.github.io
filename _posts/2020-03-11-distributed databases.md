@@ -93,8 +93,8 @@ Consistency is an agreement between clients and data.
 * Causal consistency - writes that are potentially causally related must be seen by all processes in the same order. Concurrent writes may be seen in a different order on different machines.
 * FIFO consistency - Necessary Condition: Writes done by a single process are seen by all other processes in the order in which they were issued, but writes from different processes may be seen in a different order by different processes.
 
-# Replication
-## Why replication? What is the motivation?
+## Replication
+### Why replication? What is the motivation?
 * Performance enhancement
 * Enhanced availability
 * Fault tolerance
@@ -103,13 +103,15 @@ Consistency is an agreement between clients and data.
 tradeoff between benefits of replication and work required to keep replicas consistent
 
 
-## What requirements does replicaiton should satisfy?
+### What requirements does replicaiton should satisfy?
 * Consistency - depends on application
 * Replica transparency - desirable for different applications
 
-# Consensus
+## Partitioning (sharding)
 
-## What is Consensus?
+## Consensus
+
+### What is Consensus?
 
 Consensus typically arises in the context of ``replicated state machines``, a general approach to building ``fault-tolerant`` systems. Each server has a state machine and a log. The state machine is the component that we want to make fault-tolerant, such as a hash table. It will appear to clients that they are interacting with a single, reliable state machine, even if a minority of the servers in the cluster fail.
 
@@ -124,13 +126,12 @@ Consensus typically arises in the context of ``replicated state machines``, a ge
 * replicated state machines are used to solve a wide range of fault tolerance problemsn in distributed systems. 
 * Examples, GFS/HDFS uses it to manage leader selection and store configuraiton information that must survive leader crash. 
 
-## Raft algorithm
+### Raft algorithm
 Featuress
 * Single leader. 
 
 Properties of consesus algorithms
 
-# Concepts
 ## Time and order
 When we have a sequence of events occurred in a distributed system, it’s important to know in what order they came. We can’t rely on physical clocks because it’s always not perfectly synchronized. That’s why people came up with logical clocks.
 
