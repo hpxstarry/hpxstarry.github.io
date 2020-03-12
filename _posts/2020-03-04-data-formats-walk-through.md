@@ -23,8 +23,8 @@ Data fomrats 主要可以分为如下三种类型
 
 ![image](/assets/images/data_format_overview.png)
 
-## Unstructured data formats
-
+# Unstructured data formats
+## TSV/CSV
 CSV/TSV 格式中，数据包含多个rows，每个row 有相同的column, 不同的column之间用分隔符隔开。CSV的分隔符是","， TSV是"\t"。
 CSV/TSV 简单实用，基本上是所有的数据处理engine的默认格式。许多的数据处理分析软件，例如Excel, Google Sheets，都能处理CSV/TSV文件。
 尽管简单实用，CSV/TSV也有着如下缺点。 
@@ -33,9 +33,11 @@ CSV/TSV 简单实用，基本上是所有的数据处理engine的默认格式。
 * 不能按列读，每次都得读取所有列；
 * 数据压缩。
 
-## Semi-structured data formats
+# Semi-structured data formats
+## XML
 [XML](https://en.wikipedia.org/wiki/XML)(Extensible Markup Language) 正在死去，逐渐被JSON, YAML等取代，不再赘述。
 
+## JSON
 [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), 正如它的名字一样，最开始是2001在JavaScript语言中设计出来，用于在浏览器和服务器端交互数据。但如今，JSON已广泛应用各种语言， 成为大部分web应用的默认数据格式。对JSON的历史感兴趣的可以看这篇[blog](https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html). 
 
 以下是一个JSON example
@@ -59,6 +61,7 @@ JSON有如下特点
 
 JSON 还有多种变种，例如BSON, SMILE等。
 
+## YAML
 [YAML](https://yaml.org/) (YAML Ain't Markup Language)，也被设计为human readable, 跨语言的数据序列化格式。YAML 1.2是JSON的超集。
 
 下面是YAML的一个例子
@@ -82,6 +85,7 @@ phone numbers:
 * YAML包含更多的特性 (例如支持comments，relational archors, mapping types preserving key order），因此也更复杂；
 * Human Editable，所以常用于支持configuration。
 
+## ION
 [ION](http://amzn.github.io/ion-docs/)，类似于JSON，也是一种human readable、rich typed、 跨语言的数据格式，由Amazon贡献。ION是JSON的超集。 
 
 下面是ION的一个例子
@@ -119,8 +123,9 @@ phone numbers:
 * 支持更多数据格式，例如timestamp, 二进制数据 （blobs)，符号表达式等；
 * 更简洁，一般来说ION能节省33%的空间；对数组结构，ION能减少到原来的20%左右。
 
-## Structured data formats
+# Structured data formats
 
+## Avro
 **Avro** 
 [Apache Avro](https://avro.apache.org/) 是一种row oriented，binary数据格式。它有如下特点
 * **Avro has schema and relies on it.** Within Avro, data is always presented together with its schema. It provides below benefits. 
@@ -134,7 +139,7 @@ phone numbers:
 * **Simple integration with dynamic languages. Code generation is not required to read or write data files nor to use or implement RPC protocols. Code generation as an optional optimization, only worth implementing for statically typed languages.**
 
 
-
+## Parquet
 **Parquet** 
 [Apache Parquet](https://parquet.apache.org/) is a columnar storage format available to any project in the Hadoop ecosystem, regardless of the choice of data processing framework, data model or programming language.
 * Column-oriented storage. 
