@@ -33,8 +33,7 @@ Clearly you can choose one of two things
 
 See ref[1] for the proof of CAP. 
 ### Why CAP is too narrow?
-
-Uses ``narrow definitions``
+CAP uses ``narrow definitions``
 
 * ``Consistency`` is actually ``linearizabilitily``, which is a very specific notion of consistency. Nothing to do with C in ACID. 
 
@@ -85,10 +84,8 @@ Consistency is an agreement between clients and data.
 * Strict consistency - All writes are instantaneously visble to all proceses. Relies on ``absolute global time``. 
 * Linearizability/ Atomic consistency
     + weaker than strict consistency, stronger than sequential consistency
-     +  operations are assumed to receive a timestamp with a global available clock that is loosely synchronized
-
+    +  operations are assumed to receive a timestamp with a global available clock that is loosely synchronized
     + In addition, if tsop1(x) < tsop2(y), then OP1(x) should precede OP2(y) in this sequence.“ [Herlihy & Wing, 1991]
-
 * Sequential consistency - the result of any excution is the same as if the read and write operations by all processes were executed in some sequential order.  Any valid interleaving is legal but all processes must see the same interleaving.
 * Causal consistency - writes that are potentially causally related must be seen by all processes in the same order. Concurrent writes may be seen in a different order on different machines.
 * FIFO consistency - Necessary Condition: Writes done by a single process are seen by all other processes in the order in which they were issued, but writes from different processes may be seen in a different order by different processes.
@@ -100,7 +97,7 @@ Consistency is an agreement between clients and data.
 * Fault tolerance
 * Scalability
 
-tradeoff between benefits of replication and work required to keep replicas consistent
+Tradeoff between benefits of replication and work required to keep replicas consistent
 
 
 ### What requirements does replicaiton should satisfy?
