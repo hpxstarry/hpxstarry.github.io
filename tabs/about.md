@@ -1,7 +1,5 @@
 ---
-layout: page
 title: About
-permalink: /about/
 ---
 
 Hi there, welcome. A software engineer here. I like

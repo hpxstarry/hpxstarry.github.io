@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  Data formats walk through
-date:   2020-03-04 00:31:10 -0800
-categories: bigdata
+title: "Data formats walk through"
+date: 2020-03-04 00:31:10 -0800
+
+categories: [bigdata]
+tags: [dataformat]
 ---
 ```
 前方高能，作者为表达方便，非常任性，想用中文就用中文，想用英文就用英文， 不喜误入。

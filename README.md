@@ -13,6 +13,9 @@ This package contains
 ## How to configure website (layout, theme)?
 https://jekyllrb.com/docs/pages/
 
+We are using theme chirpy now. Follow below wiki to update config. 
+https://jekyll-themes.com/chirpy/#installing
+
 ## How to add table of contents?
 https://github.com/allejo/jekyll-toc
 

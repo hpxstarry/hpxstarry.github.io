@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  Distributed systems tutorial
-date:   2020-03-10 00:31:10 -0800
-categories: bigdata
+title: "Distributed systems tutorial"
+date:  2020-03-10 00:31:10 -0800
+
+categories: [bigdata]
+tags: [bigdata]
 ---
 
 For almost 3 years, I have been using different kinds of distributed systems to solve production problems within my work. I investigated paper, books; researched the documents of distirbuted products, such as Hadoop, Spark, HBase. This gets me to think about one question, can we have a tutorial to distributed systems, introducing the common challenges, the frequently used trade-offs, different products and their relationships. So I wrote this blog. 

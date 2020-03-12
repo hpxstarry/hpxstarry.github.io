@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  Desgin patterns - creational design patterns
-date:   2019-04-17 00:31:10 -0800
-categories: design pattern
----
+title: "Desgin patterns - creational design patterns"
+date: 2019-04-17 00:31:10 -0800
 
+categories: [design pattern]
+tags: [design pattern]
+---
 
 # Introduction
 In this blog, we are going to talk about creational design patterns, such as Abstract Fatory, Builder. With this blog, you would be able to answer questions such as
