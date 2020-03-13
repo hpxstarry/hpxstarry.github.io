@@ -91,7 +91,8 @@ phone numbers:
 [ION](http://amzn.github.io/ion-docs/)，类似于JSON，也是一种human readable、rich typed、 跨语言的数据格式，由Amazon贡献。ION是JSON的超集。 
 
 下面是ION的一个例子
-```ion
+
+```
 /* Ion supports comments. */
 // Here is a struct, which is similar to a JSON object
 {
@@ -119,8 +120,8 @@ phone numbers:
   // base64-encoded in Ion text encoding
   buzz: {{VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE=}},
 }
-
 ```
+
 相比于JSON, ION具有如下特点
 * 支持更多数据格式，例如timestamp, 二进制数据 （blobs)，符号表达式等；
 * 更简洁，一般来说ION能节省33%的空间；对数组结构，ION能减少到原来的20%左右。
@@ -128,7 +129,6 @@ phone numbers:
 # Structured data formats
 
 ## Avro
-**Avro** 
 [Apache Avro](https://avro.apache.org/) 是一种row oriented，binary数据格式。它有如下特点
 * **Avro has schema and relies on it.** Within Avro, data is always presented together with its schema. It provides below benefits. 
     + This permits each datum to be written with no per-value overheads, making serialization both fast and small.
@@ -142,7 +142,6 @@ phone numbers:
 
 
 ## Parquet
-**Parquet** 
 [Apache Parquet](https://parquet.apache.org/) is a columnar storage format available to any project in the Hadoop ecosystem, regardless of the choice of data processing framework, data model or programming language.
 * Column-oriented storage. 
 * Column-wise compression. Especially for sparse data. 
@@ -155,7 +154,9 @@ Features
 * Partial column selection. 
 * Compressed. Column-wise compression. 
 
-**ORC** 
+## ORC
+
+
 **Thrift**
 **Proto Buffer**
 
