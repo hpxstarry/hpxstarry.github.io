@@ -2,8 +2,8 @@
 title: Data formats walk through
 date: 2020-03-04 00:31:10 -0800
 
-categories: [BigData, Tutorial]
-tags: [dataformat]
+categories: [Big Data, Tutorial]
+tags: [data format]
 seo:
   date_modified: 2020-03-12 22:50:24 -0700
 ---

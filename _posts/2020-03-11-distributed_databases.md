@@ -2,7 +2,7 @@
 title: Distributed databases - basic concepts
 date: 2020-03-10 00:31:10 -0800
 
-categories: [BigData]
+categories: [Big Data]
 tags: [database]
 seo:
   date_modified: 2020-03-12 01:31:28 -0700
