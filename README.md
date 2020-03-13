@@ -17,20 +17,11 @@ https://jekyllrb.com/docs/pages/
 We are using theme chirpy now. Follow below wiki to update config. 
 https://jekyll-themes.com/chirpy/#installing
 
-## How to add table of contents?
-https://github.com/allejo/jekyll-toc
-
 ## How to test
 * jekyll build && jekyll serve --watch
 
 ## How to deploy
 * jekyllrb build && git push
-
-# Write blog - FAQ
-## How to include image
-1. Put it under ``assets/images``
-2. Add ``![image](/assets/images/your_image.png)`` into your blog.
-
 
 # Theme  configure
 
@@ -184,16 +175,6 @@ If you want to display the **Liquid** snippet, surround the liquid code with `{%
 ```
 {% endraw %}
 
-## Learn More
-For more knowledge about Jekyll posts, visit the [Jekyll Docs: Posts](https://jekyllrb.com/docs/posts/).
-
-
-
-
-# Text and graphics
-
-
-
 ## Titles
 
 ***
@@ -342,3 +323,8 @@ fi;
 ## Reverse Footnote
 
 [^footnote]: The footnote source.
+
+
+
+## Learn More
+For more knowledge about Jekyll posts, visit the [Jekyll Docs: Posts](https://jekyllrb.com/docs/posts/).
