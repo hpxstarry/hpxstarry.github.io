@@ -11,10 +11,11 @@ seo:
 前方高能，作者为表达方便，非常任性，想用中文就用中文，想用英文就用英文， 不喜误入。
 ```
 
-在大数据处理中，我们经常接触到各种各样的数据类型，例如CSV, JSON, Avro等。这篇博客将
-* 讨论这些data formats，及它们的trade-offs;
-* 针对use case, 如何选择data format。 
+数据处理中，数据有存储（持久化成文件或到database）和传递的需求。数据的传递往往在不同的应用间，而不同的应用可能适用不同的编程语言，运行在不同的进程、服务器上。这个过程中就涉及到数据的序列化。基本上各种编程语言都有自己的序列化方式，例如Java的object serialization, python的pickle。但是这些序列化方式往往局限于这些语言本身。因此，一系列的通用序列化格式应运而生，例如CSV, JSON, Avro, Parquet等。
 
+这篇博客将试图讨论如下问题
+* walk through 常见的数据序列化格式，并讨论它们的优缺点；
+* 选择数据类型，粗略的rule of thumb。
 
 # 概览 data formats
 
@@ -25,7 +26,7 @@ Data fomrats 主要可以分为如下三种类型
 
 ![image](/assets/images/data_format_overview.png)
 
-# Unstructured data formats
+# 无结构型格式 - Unstructured data formats
 ## TSV/CSV
 CSV/TSV 格式中，数据包含多个rows，每个row 有相同的column, 不同的column之间用分隔符隔开。CSV的分隔符是","， TSV是"\t"。
 CSV/TSV 简单实用，基本上是所有的数据处理engine的默认格式。许多的数据处理分析软件，例如Excel, Google Sheets，都能处理CSV/TSV文件。
@@ -35,7 +36,7 @@ CSV/TSV 简单实用，基本上是所有的数据处理engine的默认格式。
 * 不能按列读，每次都得读取所有列；
 * 数据压缩。
 
-# Semi-structured data formats
+# 半结构型格式 - Semi-structured data formats
 ## XML
 [XML](https://en.wikipedia.org/wiki/XML)(Extensible Markup Language) 正在死去，逐渐被JSON, YAML等取代，不再赘述。
 
@@ -126,7 +127,7 @@ phone numbers:
 * 支持更多数据格式，例如timestamp, 二进制数据 （blobs)，符号表达式等；
 * 更简洁，一般来说ION能节省33%的空间；对数组结构，ION能减少到原来的20%左右。
 
-# Structured data formats
+# 结构型格式 -Structured data formats
 
 ## Avro
 [Apache Avro](https://avro.apache.org/) 是一种row oriented，binary数据格式。它有如下特点
