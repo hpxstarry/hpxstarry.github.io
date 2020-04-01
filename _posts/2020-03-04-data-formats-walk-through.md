@@ -16,6 +16,13 @@ seo:
 * walk through 常见的数据序列化格式，并讨论它们的优缺点；
 * 选择数据类型，粗略的rule of thumb。
 
+Features we like
+* 跨语言
+* Schema
+* Human readable 
+* Columnar
+* Document
+
 # 概览 data formats
 
 Data fomrats 主要可以分为如下三种类型
@@ -155,6 +162,13 @@ Features
 * Compressed. Column-wise compression. 
 
 ## ORC
+
+[ORC](https://orc.apache.org/) claims to be the smallest, fastest columnar storage for Hadoop workloads. ORC is a self-describing, type-aware, columnar file format designed for Hadoop workloads. It is optimized for large streaming reads, but with integrated support for finding required rows quickly. Storing data in a columnar format lets the reader read, decompress, and process only the values that are required for the current query. Because ORC files are type-aware, the writer chooses the most appropriate encoding for the type and builds an internal index as the file is written. Optimized RC file. Optimize for Hive with ACID. 
+
+* Built-in Indexes. Predicate pushdown uses those indexes to determine which stripes in a file need to be read for a particular query and the row indexes can narrow the search to a particular set of 10,000 rows. ORC supports the complete set of types in Hive, including the complex types: structs, lists, maps, and unions.
+* Columnar format. Let the reader read, decompress, and process only the values that are required for the current query
+* Optimize for Hive. Apache Hive was the original use case and home for ORC. ORC’s strong type system, advanced compression, column projection, predicate push down, and vectorization support make Hive perform better than any other format for your data.
+
 
 
 **Thrift**
