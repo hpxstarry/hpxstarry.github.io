@@ -30,7 +30,7 @@ Data fomrats 主要可以分为如下三种类型
 * Semi-structured， 半结构化，知道一定的schema信息，例如JSON, YAML, XML。 
 * Structured，结构化，知道完整的schema，例如Avro, Parquet等。
 
-![image](/assets/images/data_format_overview.png)
+![image](/assets/img/blog/data_format_overview.png)
 
 # 无结构型格式 - Unstructured data formats
 ## TSV/CSV

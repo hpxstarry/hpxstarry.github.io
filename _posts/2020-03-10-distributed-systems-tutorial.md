@@ -26,7 +26,7 @@ For a distributed system to work, though, you need the software running on those
 
 # Distributed systems categories
 
-![image](/assets/images/distributed_systems_overview.png)
+![image](/assets/img/blog/distributed_systems_overview.png)
 
 # Reading
 ## Books
