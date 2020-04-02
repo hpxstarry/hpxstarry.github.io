@@ -18,14 +18,21 @@ seo:
 * CSS. Cascading Style Sheets, 指明网页内容的style, 例如字体，背景等。常嵌入html中。 [资料](https://www.w3schools.com/css/)
 * JAVASCRIPT. 前端的编程语言，常嵌入HTML中。用于与用户、后台交互，改变网页内容等。 [资料](https://www.w3schools.com/js/)
 
-前端 FRAMEWORKS
-* AnjularJS
+Javascript frameworks
+* Anjular, developed by Facebook
 * Vue.js
-* React 
+* React, developed by Google
 
 Misc
-* Bootstrap
-* Typescript
+* [Bootstrap](https://www.w3schools.com/whatis/whatis_bootstrap.asp) - 非常流行的CSS framework，适合于responsive和移动端网站。
+* Typescript - super set of JavaScript with typed support. 
+* JavaScriptX - entension of JavaScript. 
+* jQuery - JavaScript library.  A lightweight, "write less, do more", JavaScript library.
+  + HTML/DOM manipulation
+  + CSS manipulation
+  + HTML event methods
+  + Effects and animations
+  + AJAX - Asynchronous JavaScript and XML, is the art of exchanging data with a server, and updating parts of a web page - without reloading the whole page.
 
 # 后端技术储备
 * node JS
