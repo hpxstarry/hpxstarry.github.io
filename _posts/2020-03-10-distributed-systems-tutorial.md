@@ -24,7 +24,7 @@ Building/maintaining a distributed system is complicated, full of pitfalls and l
 
 # Distributed systems categories
 
-![image](/assets/images/distributed_systems_overview.png)
+![image](/assets/img/blog/distributed_systems_overview.png)
 
 
 # Concepts
