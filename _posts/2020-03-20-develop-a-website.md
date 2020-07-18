@@ -31,12 +31,12 @@ Misc
 * node JS
 
 # 亲身实践
-目标：在githug pages上建立一个网站，前端用VUE.JS。参考(博客)[https://blog.usmanity.com/serving-vue-js-apps-on-github-pages/]
+目标：在githug pages上建立一个网站，前端用VUE.JS。
 
 1. set up (Windows)
   1. 安装 nvm-windows 作为 node.js 的版本管理器 https://github.com/coreybutler/nvm-windows
   1. 安装 cmder 作为WINDOWS下的shell
   1. 在 cmder shell中，运行"nvm install 13.12.0" 和 "nvm use 13.12.00" 来安装 node.js
   1. 在 cmder shell中，运行“npm install -g @vue/cli" 来安装vue-cli
-2. github 创建repository
-3. 
+2. 其余步骤参考(博客)[https://blog.usmanity.com/serving-vue-js-apps-on-github-pages/]
+
