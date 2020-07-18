@@ -5,10 +5,10 @@ date: 2020-03-10 00:31:10 -0800
 categories: [Big Data, Tutorial]
 tags: [bigdata]
 seo:
-  date_modified: 2020-03-12 23:31:07 -0700
+  date_modified: 2020-07-12 23:31:07 -0700
 ---
 
-For the past 5 years, I have been using different kinds of distributed systems to solve production problems. Have read some books, paper, blogs. Maintained Hadoop, HBase cluster for some time. Now I am writing this blog to summarize for myself. It will act like a tutorial or an index for distributed systems.
+For the past 5 years, I have been using different kinds of distributed systems to solve production problems. Have read some books, paper, blogs. Maintained Hadoop, HBase cluster for some time. Now I am writing this blog to summarize for myself. It will act like a tutorial or an indexing for distributed systems. As a disclaimer, distributed systems are complicated and this blog is far less be able to cover all. Any specific section worths being discussed separately in a blog or even a book. 
 
 # Basic FAQs
 
@@ -26,9 +26,44 @@ Building/maintaining a distributed system is complicated, full of pitfalls and l
 
 ![image](/assets/img/blog/distributed_systems_overview.png)
 
+## Distributed computing
+**Frameworks**
+* MapReduce - Consisting of two stages of map and then reduce. See [link](https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html) for details. 
+* Spark - runs in memory or disk (claims to be 100x faster in memory, 10x faster in disk comparing to Hadoop); not limited to the two-stage paradigm of MapReduce. 
+* Streamed processing
+
+**Products**
+* Hadoop
+* Apache Spark
+* Pig, Hive
+* Apache Spark Streaming
+* Apache Flink
+* Apache Storm
+* Kafka Streams
+* Apache Samza
+
+## Distributed database
+**Products**
+
+
+## Distributed cache
+
+## Distributed file systems
+
+## Distributed messaging
+
+## Distributed ledger
+* Blockchain
+* Bitcoin
 
 # Concepts
-* 
+## ``Byzantine fault``
+A Byzantine fault (also interactive consistency, source congruency, error avalanche, Byzantine agreement problem, Byzantine generals problem, and Byzantine failure) is a condition of a computer system, particularly distributed computing systems, where components may fail and there is imperfect information on whether a component has failed. The term takes its name from an allegory, the "Byzantine Generals Problem", developed to describe a situation in which, in order to avoid catastrophic failure of the system, the system's actors must agree on a concerted strategy, but some of these actors are unreliable [1]. In a Byzantine fault, a component such as a server can inconsistently appear both failed and functioning to failure-detection systems, **presenting different symptoms to different observers**. It is difficult for the other components to declare it failed and shut it out of the network, because they need to first reach a consensus regarding which component has failed in the first place.
+
+``Byzantine fault tolerance (BFT)`` is the dependability of a fault-tolerant computer system to such conditions.  
+
+[1] https://en.wikipedia.org/wiki/Byzantine_fault
+[2] https://academy.binance.com/blockchain/byzantine-fault-tolerance-explained 
 
 # Reading
 ## Books
