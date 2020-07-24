@@ -8,10 +8,10 @@ seo:
   date_modified: 2020-07-12 23:31:07 -0700
 ---
 
-For the past 5 years, I have been using different kinds of distributed systems to solve production problems. Have read some books, paper, blogs. Maintained Hadoop, HBase cluster for some time. Now I am writing this blog to summarize for myself. It will act like an indexing of different blogs, books, paper, links. As a disclaimer, distributed systems are complicated and this blog is far less able to cover all.
+For the past 5 years, I have been using different kinds of distributed systems to solve production problems. Read some books, paper, blogs; maintained Hadoop, HBase cluster for some time. Wrote this blog to act like a map to navigate among these resources. 
 
 Github already has a similar page that listed related resources for distributed systems.
-* https://github.com/theanalyst/awesome-distributed-systems 
+* [https://github.com/theanalyst/awesome-distributed-systems](https://github.com/theanalyst/awesome-distributed-systems)
 
 # Tutorials
 ## Blogs
@@ -25,15 +25,14 @@ Github already has a similar page that listed related resources for distributed 
 * Designing Data-Intensive Application
 * Jepsen — Blog explaining a lot of distributed technologies (ElasticSearch, Redis, MongoDB, etc)
 * [No SQL database](http://www.christof-strauch.de/nosqldbs.pdf)
-* https://leanpub.com/distributed-systems-for-practitioners
+* [distributed-systems-for-practitioners](https://leanpub.com/distributed-systems-for-practitioners)
 
 ## Paper
-* [papers we love - distributed systems]](https://github.com/papers-we-love/papers-we-love/tree/master/distributed_systems)
+* [papers we love - distributed systems](https://github.com/papers-we-love/papers-we-love/tree/master/distributed_systems)
 * [Lamport paper](http://lamport.azurewebsites.net/pubs/pubs.html)
 
 ## Courses
 * Cloud Computing Specialization, University of Illinois, Coursera — A long series of courses (6) going over distributed system concepts, applications ?
-
 
 # Distributed systems categories
 
