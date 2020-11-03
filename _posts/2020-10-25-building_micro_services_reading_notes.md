@@ -21,14 +21,32 @@ Microservices are ``small``, ``autonomous`` services that work together.
 3) call pattern - SOA usually uses synchronous calls while microservice can have different call patners and asynchronous communication is popular. 
 4) date duplication - Usually SOA applications will get hold of or make changes to data directly at its primary source. Microservices may have duplicated local data for decoupling. 
 
+Another way to think of microservices as a specific approach for SOA in the same way that XP or
+Scrum are specific approaches for Agile software development.
 
 ## Q: What are the pros of microservice architecture?
+* Technology heterogeneity - different parts of the system can adopt different tech stacks. We can optimize the performance with different tech separately; it also enables faster adoption of new tech. But it also introduces overhead to use multiple tech stacks. 
+* Resilience - With service boundaries being the obvious bulkheads, microservices can help isloate problems and improve resilience. 
+* Scaling - Independent scaling. Scale only the services that need scaling while other parts run on smaller, less powerful hardware. 
+* Ease of deployment - Independent, small-impact, low-risk, faster deployment. 
+* Organization alignment - Allow us to better align architecture with organization. Easier to shift ownership. 
+* Composability - Microservices allow for functionality to be consumed in different ways for different purposes. 
+* Optimizing for replaceability - With services being small, it is easier to rewrite the whole service or deprecate/kill it when required. 
 
 ## Q: What are the cons of microservice architecture?
+* Complexity - added complexity to manage distributed systems. Added complexity to build monitoring, deployment tools, debugging tools, etc. 
+* Modeling - if not modeled well, changes need to update multiple micro services, which takes more time to develop, test and deploy. 
+* Debug - harder to debug an issue. 
+
+## Q: Microservice is a way to decomposite systems. What are other ways?
+* Shared libraries
+* Modules - OSGi in Java. 
+
+## Q: What are the pitfalls?
 
 ## Q: What are the best practises?
 
-## Q: Traditional patterns of microservice architecture?
+## Q: Patterns of microservice architecture?
 
 ## Q: From a techinical point of view, how to implement microservice architecture?
 
