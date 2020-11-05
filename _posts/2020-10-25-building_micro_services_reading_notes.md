@@ -34,19 +34,27 @@ Scrum are specific approaches for Agile software development.
 * Optimizing for replaceability - With services being small, it is easier to rewrite the whole service or deprecate/kill it when required. 
 
 ## Q: What are the cons of microservice architecture?
-* Complexity - added complexity to manage distributed systems. Added complexity to build monitoring, deployment tools, debugging tools, etc. 
+* Complexity - added complexity to manage distributed systems; need to handle issues related to communication erros, API versioning, etc. 
 * Modeling - if not modeled well, changes need to update multiple micro services, which takes more time to develop, test and deploy. 
-* Debug - harder to debug an issue. 
+* Debug - debugging involes multi services and takes more time. 
+* DevOps - additional efforts to achive engineering/operation excellence, such as full CI/CD pipelines, metrics/monitoring, etc. 
+* Code duplication - microservices usually duplicates shared code in different microservices. 
 
 ## Q: Microservice is a way to decomposite systems. What are other ways?
 * Shared libraries
 * Modules - OSGi in Java. 
 
 ## Q: What are the pitfalls?
+* Shared database
 
 ## Q: What are the best practises?
+* Model services using domain driven design (DDD). 
 
 ## Q: Patterns of microservice architecture?
+
+## Q: How microservices are integrated? What are the common ways?
+* Sync - request/response
+* Async - event based
 
 ## Q: From a techinical point of view, how to implement microservice architecture?
 
