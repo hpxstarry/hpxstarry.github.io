@@ -1,5 +1,5 @@
 ---
-title: Reading nots of "building microservices"
+title: Bbuilding microservices - reading notes
 date: 2020-10-24 00:31:10 -0800
 
 categories: [microservices]
@@ -67,17 +67,31 @@ Drawbacks
   - Same problem for scale parts independently with library
   - Same problem for resiliency
 
+  
+## Q: How microservices are integrated? What are the common ways?
+* Synchronous vs Asynchronous 
+  + Request/response - a client initiates a request and waits for a resonse.
+    + Mostly used for synchronous communication. 
+    + Can also be used for asynchronous communication. Client can kick off an operation and register a callback.  
+  * Event based - one party produces events, other parties listen to events and take actions. Asynchronous; highly decoupled.
+* Orchestration vs Choreography - a process that stretch across the boundary of individual services; usually consists of multiple steps of invocation.
+  + Orchestration - rely on a central brain to guide and drive the process of a flow. Usually work with services with synchronous model. 
+    + Pros: easy to understand, monitor and track
+    + Cons: the orchestration flow acts as a god father and may introduce additional coupling 
+  + Choreography - inform each part of the system the job and let it work out the details. Works in a distributed way that each part (service) act separately based on the request or event it receives. Usually depend on that the services collaborates with aynchronous events. 
+    + Pros: more loosely coupled, more flexible and amendble to change. 
+    + Cons: the process or flow is implicit. Needs additional work to monitor and track. 
+* RPC - remote procedure call. Implementations include SOAP (HTTP+XML), client/service stub, 
+* REST 
+
 ## Q: What are the pitfalls?
-* Shared database
+* Bad integration pattern - use shared database as integration point
 
 ## Q: What are the best practises?
 * Model services using domain driven design (DDD). 
 
 ## Q: Patterns of microservice architecture?
 
-## Q: How microservices are integrated? What are the common ways?
-* Sync - request/response
-* Async - event based
 
 ## Q: From a techinical point of view, how to implement microservice architecture?
 
