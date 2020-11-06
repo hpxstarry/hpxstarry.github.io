@@ -12,37 +12,60 @@ seo:
 # FAQ
 ## Q: What is microservice? 
 Microservices are ``small``, ``autonomous`` services that work together. 
-* Small - Several factors to consider: 1) time to rewrite the whole; 2) whether it aligns and fits the team structure; 3) no longer feels to be big; 4) trade offs between the benefits and complexities. 
-* Autonomous - change independently; decoupled from each other; deployed separately.  
+1. Small - Several factors to consider: 1) time to rewrite the whole; 2) whether it aligns and fits the team structure; 3) no longer feels to be big; 4) trade offs between the benefits and complexities. 
+2. Autonomous - change independently; decoupled from each other; deployed separately.  
 
 ## Q: What is the difference between microservice architecture and service oriented architecture (SOA)?
-1) scope - SOA is usually adopted enterprise-wide while microservices are typically used to build individual applications, i.e., to further decompose applications (services) to micro services.
-2) reuse - reuse of integrations is the primary goal of SOA while microservices prefers to decoupling and sometimes even copy code or duplicate data to achieve that. 
-3) call pattern - SOA usually uses synchronous calls while microservice can have different call patners and asynchronous communication is popular. 
-4) date duplication - Usually SOA applications will get hold of or make changes to data directly at its primary source. Microservices may have duplicated local data for decoupling. 
+1. scope - SOA is usually adopted enterprise-wide while microservices are typically used to build individual applications, i.e., to further decompose applications (services) to micro services.
+2. reuse - reuse of integrations is the primary goal of SOA while microservices prefers to decoupling and sometimes even copy code or duplicate data to achieve that. 
+3. call pattern - SOA usually uses synchronous calls while microservice can have different call patners and asynchronous communication is popular. 
+4. date duplication - Usually SOA applications will get hold of or make changes to data directly at its primary source. Microservices may have duplicated local data for decoupling. 
 
 Another way to think of microservices as a specific approach for SOA in the same way that XP or
 Scrum are specific approaches for Agile software development.
 
 ## Q: What are the pros of microservice architecture?
-* Technology heterogeneity - different parts of the system can adopt different tech stacks. We can optimize the performance with different tech separately; it also enables faster adoption of new tech. But it also introduces overhead to use multiple tech stacks. 
-* Resilience - With service boundaries being the obvious bulkheads, microservices can help isloate problems and improve resilience. 
-* Scaling - Independent scaling. Scale only the services that need scaling while other parts run on smaller, less powerful hardware. 
-* Ease of deployment - Independent, small-impact, low-risk, faster deployment. 
-* Organization alignment - Allow us to better align architecture with organization. Easier to shift ownership. 
-* Composability - Microservices allow for functionality to be consumed in different ways for different purposes. 
-* Optimizing for replaceability - With services being small, it is easier to rewrite the whole service or deprecate/kill it when required. 
+1. Technology heterogeneity - different parts of the system can adopt different tech stacks. We can optimize the performance with different tech separately; it also enables faster adoption of new tech. But it also introduces overhead to use multiple tech stacks. 
+1.  Resilience - With service boundaries being the obvious bulkheads, microservices can help isloate problems and improve resilience. 
+1.  Scaling - Independent scaling. Scale only the services that need scaling while other parts run on smaller, less powerful hardware. 
+1.  Ease of deployment - Independent, small-impact, low-risk, faster deployment. 
+1.  Organization alignment - Allow us to better align architecture with organization. Easier to shift ownership. 
+1.  Composability - Microservices allow for functionality to be consumed in different ways for different purposes. 
+1.  Optimizing for replaceability - With services being small, it is easier to rewrite the whole service or deprecate/kill it when required. 
 
 ## Q: What are the cons of microservice architecture?
-* Complexity - added complexity to manage distributed systems; need to handle issues related to communication erros, API versioning, etc. 
-* Modeling - if not modeled well, changes need to update multiple micro services, which takes more time to develop, test and deploy. 
-* Debug - debugging involes multi services and takes more time. 
-* DevOps - additional efforts to achive engineering/operation excellence, such as full CI/CD pipelines, metrics/monitoring, etc. 
-* Code duplication - microservices usually duplicates shared code in different microservices. 
+1.  Complexity - added complexity to manage distributed systems; need to handle issues related to communication erros, API versioning, etc. 
+1.  Modeling - if not modeled well, changes need to update multiple micro services, which takes more time to develop, test and deploy. 
+1.  Debug - debugging involes multi services and takes more time. 
+1.  DevOps - additional efforts to achive engineering/operation excellence, such as full CI/CD pipelines, metrics/monitoring, etc. 
+1.  Code duplication - microservices usually duplicates shared code in different microservices. 
 
 ## Q: Microservice is a way to decomposite systems. What are other ways?
-* Shared libraries
-* Modules - OSGi in Java. 
+``Shared libraries`` - breakdown code base into multiple libraries. 
+
+Drawbacks
+  + Lost technology heterogeneity - library usually is used by same language. 
+  + Reduced ability to scale parts independently
+  + Reduced ability to deploy parts independently
+  + Shared code used to communicate becomes a point of coupling
+  + Everything in the lib can be potentially used, causing the lib hard to change
+  + Lack obvious seams around which to erect architectual safty measures to ensure system resiliency 
+
+Notes
+  + Breaking down code base into libraries is a regular practice to decompose an existing monolithic service into microservices. 
+
+``Modules`` - Provided by some languages for modual decomposition that go beyonds simple libraries. Allow for lifecycle management of the modules so that it can be deployed to a running process without taking it down. 
++ OSGi in Java - emerged as a framework to allow plugins in eclipse. 
++ Java 9 module. Difference between OSGi and Java 9 module - https://www.infoq.com/articles/java9-osgi-future-modularity/
++ Erlang support module - impressive support for module. 
+Module address the independently deployable concern of libraries
+
+Drawbacks 
+  - OSGi tries to enforce lifecycle management without good support from language itself
+  - Without clear boundary, easier to fall into the trap of overly coupled modules. 
+  - Same problem for technology heterogeneity with library
+  - Same problem for scale parts independently with library
+  - Same problem for resiliency
 
 ## Q: What are the pitfalls?
 * Shared database
