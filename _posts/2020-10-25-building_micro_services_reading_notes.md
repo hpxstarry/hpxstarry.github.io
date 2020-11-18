@@ -72,7 +72,7 @@ Drawbacks
 * Synchronous vs Asynchronous 
   + Request/response - a client initiates a request and waits for a resonse.
     + Mostly used for synchronous communication. 
-    + Can also be used for asynchronous communication. Client can kick off an operation and register a callback.  
+    + Can also be used for asynchronous communication. Client can kick off an operation and register a callback. Examples are facebook APIs 
   * Event based - one party produces events, other parties listen to events and take actions. Asynchronous; highly decoupled.
 * Orchestration vs Choreography - a process that stretch across the boundary of individual services; usually consists of multiple steps of invocation.
   + Orchestration - rely on a central brain to guide and drive the process of a flow. Usually work with services with synchronous model. 
@@ -81,23 +81,31 @@ Drawbacks
   + Choreography - inform each part of the system the job and let it work out the details. Works in a distributed way that each part (service) act separately based on the request or event it receives. Usually depend on that the services collaborates with aynchronous events. 
     + Pros: more loosely coupled, more flexible and amendble to change. 
     + Cons: the process or flow is implicit. Needs additional work to monitor and track. 
-* RPC - remote procedure call. Implementations include SOAP (HTTP+XML), client/service stub, 
-* REST 
+* RPC - remote procedure call. Implementations include SOAP (HTTP+XML). Usually relies on having an interface definition (SOAP, Thrift, protocol buffer) while java RMI does not rely on it. Web Service Definition Language (WSDL) can help generate client. Can run on top of different protocols with different serialization/deserialization techniques. 
+    + Cons: technical coupling (for example, RMI); remote call is not like local call; brittleness to add/remove fields. 
+* REST - REST (REpresentational State Transfer) is an architectual style for building web service interfaces. Mostly commonly used over HTTP.
+    + Pros: default choice for service-to-service integration
+    + Cons: cannot easily generate client stub; some web server frameworks don't support all the HTTP verbs well; performance may also be an issue (HTTP overhead might be a concern for low-latency requirements)
+* Implementing event-based collaboration
+  + Technical choices - middeware like RabbitMQ (handle subscriptions, even handle states of consumers), events over HTTP (ATOM), message broker. 
 
 ## Q: What are the pitfalls?
-* Bad integration pattern - use shared database as integration point
+* Bad integration pattern - use shared database as integration point. Large blast radius; hard to change; tied to specific technology choice. 
+* Microservices not modeling well around domain boundaries. 
 
 ## Q: What are the best practises?
 * Model services using domain driven design (DDD). 
 
 ## Q: Patterns of microservice architecture?
 
-
-## Q: From a techinical point of view, how to implement microservice architecture?
+## Q: Technical frameworks/services to implement microservice architecture?
+* ECS
+* EKS
+* Kafka
 
 ## Q: How to migrate from monolithic architecture to microservice architecture?
 
-## Q: For further readings, what books to recommend?
-
 # References
 * Microservice vs SOA - https://www.ibm.com/cloud/blog/soa-vs-microservices
+* REST - https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+* Enterprise integration patterns 
