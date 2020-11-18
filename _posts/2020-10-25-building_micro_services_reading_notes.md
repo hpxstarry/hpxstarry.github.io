@@ -1,5 +1,5 @@
 ---
-title: Bbuilding microservices - reading notes
+title: Building microservices - reading notes
 date: 2020-10-24 00:31:10 -0800
 
 categories: [microservices]
