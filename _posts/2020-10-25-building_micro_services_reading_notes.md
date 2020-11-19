@@ -91,19 +91,33 @@ Drawbacks
 
 ## Q: What are the pitfalls?
 * Bad integration pattern - use shared database as integration point. Large blast radius; hard to change; tied to specific technology choice. 
+  + Best practice - use lously decoupled integration ways. 
 * Microservices not modeling well around domain boundaries. 
+  + Best practice - model services using domain driven design (DDD).
 
-## Q: What are the best practises?
-* Model services using domain driven design (DDD). 
+## Q: What are the best practice for deployment?
+* CI/CD matters a lot for micro services. Auto everything. 
+* Artifact - not technology-specific or platform-specific artifacts. Images as artifacts to bake in dependencies as well as our service (benefit: fast spin-up time). 
+* Immutable server - servers are immutable. All changes are deployed via pipelines. Get rid of configuration drift. 
+* Configuration that changes one environment from another should be kept minimal. 
+* Having single service per host or per container. 
 
-## Q: Patterns of microservice architecture?
+
+## Q: What are the best practice for testing?
+* Optimize for fast feedback; separate test types. 
+* Unit tests -> service tests -> end to end tests. 
+* Mocking/stubbing - Stub out external collaborators to test only service in scope. 
+* Test journies, not test stories. 
+* Consumer driven tests. 
+* Cannary release 
+* Mean time to repair vs mean time between failures. 
 
 ## Q: Technical frameworks/services to implement microservice architecture?
-* ECS
-* EKS
+* Docker 
+* Kubernetes
+* ECS - https://aws.amazon.com/ecs
+* EKS - https://aws.amazon.com/eks/ 
 * Kafka
-
-## Q: How to migrate from monolithic architecture to microservice architecture?
 
 # References
 * Microservice vs SOA - https://www.ibm.com/cloud/blog/soa-vs-microservices
