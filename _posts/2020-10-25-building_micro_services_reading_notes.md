@@ -109,7 +109,7 @@ Drawbacks
 * Mocking/stubbing - Stub out external collaborators to test only service in scope. 
 * Test journies, not test stories. 
 * Consumer driven tests. 
-* Cannary release 
+* Cannary release    
 * Mean time to repair vs mean time between failures. 
 
 ## Q: Technical frameworks/services to implement microservice architecture?
