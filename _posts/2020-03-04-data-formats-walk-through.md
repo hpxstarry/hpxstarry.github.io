@@ -1,6 +1,7 @@
 ---
 title: Data formats walk through
 date: 2020-03-04 00:31:10 -0800
+published: false
 
 categories: [Big Data, Tutorial]
 tags: [data format]
