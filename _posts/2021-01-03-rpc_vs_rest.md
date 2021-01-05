@@ -1,12 +1,9 @@
 ---
 title: RPC vs REST
-date: 2021-01-04 00:31:10 -0800
 published: true
 
 categories: [microservices]
 tags: [design]
-seo:
-  date_modified: 2021-01-04 23:40:26 -0800
 ---
 >
 
