@@ -40,6 +40,7 @@ What matters
 1. Technology agnostic
 
 **What is RPC?**
+
 RPC stands for Remote Procedure Call
   1.  Running remote procedure calls like local calls
   1.  Requires a client stub
@@ -49,6 +50,7 @@ RPC stands for Remote Procedure Call
 ![image](/assets/img/blog/rpc.png)
 
 **What is REST?** 
+
 REpresentational State Transfer - an architectural style of HTTP with below \hreff{https://en.wikipedia.org/wiki/Representational_state_transfer}{6 principles/constraints}
   1.  Uniform interface
     \begin{itemize}
@@ -63,7 +65,9 @@ REpresentational State Transfer - an architectural style of HTTP with below \hre
   1.  Layered system
   1.  Code on demand
 
-## REST vs RPC
+
+**REST vs RPC** 
+
 RPC
   1.  Operation-centric (more operations required for resource CRUD)
   1.  Use protocols including HTTP, TCP, UDP (able to achieve higher efficiency)
@@ -77,8 +81,8 @@ REST
   1.  Cache - mostly for GET, HTTP cache support
 
 
-## Implementations
-### RPC implementations
+**RPC implementations** 
+
 Popular frameworks for RPC
   1.  Amazon coral framework
   1.  \hreff{https://grpc.io/docs/what-is-grpc/introduction/}{gRPC} - developed by google, open source. 
@@ -107,12 +111,16 @@ gRPC
 1.  Rich lanaguage support - C\#, C++, Go, Java, Objective-C, ...
 1.  Async support
 
+
+**REST implementations** 
+
 REST implementations
   1.  Amazon ARest
   1.  Amazon Coral w/t HTTP endpoint binding
   1.  OpenAPI (Swagger)
   1.  JAX-RS
 
+**Misc**
 
 Interface definition language - IDL
   1.  Smithy
