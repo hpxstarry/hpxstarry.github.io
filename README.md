@@ -21,7 +21,7 @@ https://jekyll-themes.com/chirpy/#installing
 * jekyll build && jekyll serve --watch
 
 ## How to deploy
-* jekyllrb build && git push
+* jekyll build && git push
 
 # Theme  configure
 

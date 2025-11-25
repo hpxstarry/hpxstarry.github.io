@@ -1,5 +1,5 @@
 ---
-title: RPC vs REST
+title: Deep Link Test
 published: true
 
 categories: [commerce]
